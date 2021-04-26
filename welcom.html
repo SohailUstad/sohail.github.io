@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+	function  add(){
+		var a=document.getElementById("num1").value;
+		var b=document.getElementById("num2").value; 
+		var result= parseInt(a)+parseInt(b);
+		document.getElementById("p").innerHTML=result;
+	}
+	function  sub(){
+	var a=document.getElementById("num1").value;
+	var b=document.getElementById("num2").value; 
+	var result= parseInt(a)-parseInt(b);
+	document.getElementById("p").innerHTML=result;
+	}
+	function  mult(){
+	var a=document.getElementById("num1").value;
+	var b=document.getElementById("num2").value; 
+	var result= parseInt(a)*parseInt(b);
+	document.getElementById("p").innerHTML=result;
+	}
+	function  div(){
+	var a=document.getElementById("num1").value;
+	var b=document.getElementById("num2").value; 
+	var result= parseInt(a)/parseInt(b);
+	document.getElementById("p").innerHTML=result;
+	}
+</script>
+<style type="text/css">
+	button {
+		font-size:20px;
+		margin:auto 5px;
+	}
+	#p{
+		border:2px solid black;
+		padding:20px;
+		background-color:black;
+		color:white;
+	}
+</style>
+</head>
+<body><br>
+<label>Num1: </label><input type="number" id="num1" ><br><br>
+<label>Num2: <input type="number" id="num2" ><br><br>
+<button onclick="add()">➕</button>
+<button onclick="sub()">➖</button>
+<button onclick="mult()">✖</button>
+<button onclick="div()">➗</button>
+<p>Answer</p><p id="p" ></p>
+</body>
+</html>
