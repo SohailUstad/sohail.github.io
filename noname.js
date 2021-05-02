@@ -15,9 +15,9 @@ function minus(){
 	a.innerHTML=b;
 }
 function reset(){
-	b=1;
+	b=0;
 	a=document.getElementById("p1");
-	a.innerHTML=b-1;
+	a.innerHTML=b;
 }
 function record(){
 	a=document.getElementById("div");
