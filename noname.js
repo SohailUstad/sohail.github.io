@@ -5,9 +5,9 @@ function change(){
 	b+=1;
 }
 function reset(){
-	b=0;
+	b=1;
 	a=document.getElementById("p1");
-	a.innerHTML=b;
+	a.innerHTML=b-1;
 }
 function record(){
 	a=document.getElementById("div");
