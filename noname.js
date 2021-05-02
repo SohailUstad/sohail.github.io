@@ -21,4 +21,9 @@ function record(){
 	c.appendChild(d);
 	a.insertBefore(c,a.childNodes[1]);
 }
-
+function remove(){
+	a=document.getElementById("div");
+	while(a.firstChild){
+		a.removeChild(a.firstChild);
+	}
+}
