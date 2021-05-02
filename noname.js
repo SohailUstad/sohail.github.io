@@ -1,8 +1,18 @@
 var b=1;
-function change(){
+function plus(){
 	a=document.getElementById("p1");
 	a.innerHTML=b;
 	b+=1;
+}
+function minus(){
+	a=document.getElementById("p1");
+	if(b==0){
+		b=b;
+	}
+	else{
+	b-=1;
+	}
+	a.innerHTML=b;
 }
 function reset(){
 	b=1;
