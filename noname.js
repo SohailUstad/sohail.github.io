@@ -1,33 +1,29 @@
 var b=1;
+var res=0;
 function plus(){
 	a=document.getElementById("p1");
 	a.innerHTML=b;
+	res=b;
 	b+=1;
 }
 function minus(){
 	a=document.getElementById("p1");
-	if(b==0){
-		b=b;
+	if(b!=0){
+		res=b-1;
+		b-=1;
+		a.innerHTML=b;
 	}
-	else{
-	b-=1;
-	}
-	a.innerHTML=b;
 }
 function reset(){
 	b=0;
+	res=0;
 	a=document.getElementById("p1");
 	a.innerHTML=b;
 }
 function record(){
 	a=document.getElementById("div");
 	c=document.createElement("li");
-	if(b!=0){
-		d=document.createTextNode(b-1);
-	}
-	else{
-		d=document.createTextNode(b);
-	}
+	d=document.createTextNode(res);
 	c.appendChild(d);
 	a.insertBefore(c,a.childNodes[1]);
 }
