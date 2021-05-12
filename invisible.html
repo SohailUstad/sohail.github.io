@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+	function add(){
+		a=document.getElementById("text").value;
+		b=document.createTextNode(a);
+		c=document.getElementById("p");
+		d=document.createElement("li");
+		d.style.backgroundColor="black";
+		d.style.color="white";
+		d.style.border="2px solid gray";
+		d.style.padding="5px";
+		d.style.borderRadius="15px";
+		d.style.margin="5px";
+		d.appendChild(b);
+		c.appendChild(d);
+		document.getElementById("text").value="";
+	}
+</script>
+<style type="text/css">
+body{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	padding:5px;
+}
+textarea {
+	background:none;
+	height:300px;
+	width:100%;
+	border:none;
+}
+button {
+	background:none;
+	height:30px;
+	width:100px;
+	border:none;
+}
+</style>
+</head>
+<body>
+<h1>The invisible </h1>
+<textarea id="text" ></textarea>
+<button onclick="add()"></button>
+<p id="p" ></p>
+</body>
+</html>
