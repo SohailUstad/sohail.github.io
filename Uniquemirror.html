@@ -1,118 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Pacifico|Bonbon|Shadows Into Light">
-<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style type="text/css">
-div{
-	border:1px solid black;
-	text-align:center;
-	padding:20px;
-	font-size:20px;
-	visibility:hidden;
-}
-#div1{
-	font-family:Arial,sans-serif;
-}
-#div2{
-	font-family:Shadows Into Light;
-}
-#div3{
-	font-family:Bonbon;
-}
-#div4{
-	font-family:Pacifico;
-}
-#div5{
-	font-family:cursive;
-}
-#div6{
-	font-family:fantasy;
-}
-#div7{
-	font-family:monospace;
-}
-#div8{
-	font-family:Trirong;
-}
-#div9{
-	font-family:Sofia;
-}
-#div10{
-	font-family:Audiowide;
-}
-</style>
+    <title>Unique Mirror</title>
+    <style>
+        * {
+            padding: 2px;
+        }
+
+        .col-sm-3{
+            border-bottom: 1px solid black;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+
+        #f1 {
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        #f2 {
+            font-family: 'Amatic SC', cursive;
+        }
+
+        #f3 {
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        #f4 {
+            font-family: 'Caveat', cursive;
+        }
+
+        #f5 {
+            font-family: 'Cinzel', serif;
+        }
+
+        #f6 {
+            font-family: 'Inconsolata', monospace;
+        }
+
+        #f7 {
+            font-family: 'Indie Flower', cursive;
+        }
+
+        #f8 {
+            font-family: 'Kaisei HarunoUmi', serif;
+        }
+
+        #f9 {
+            font-family: 'Kaisei Tokumin', serif;
+        }
+
+        #f10 {
+            font-family: 'Lobster', cursive;
+        }
+
+        #f11 {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+
+        #f12 {
+            font-family: 'Monoton', cursive;
+        }
+
+        #f13 {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        #f14 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        #f15 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #f16 {
+            font-family: 'Pacifico', cursive;
+        }
+
+        #f17 {
+            font-family: 'Padauk', sans-serif;
+        }
+
+        #f18 {
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        #f19 {
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        #f20 {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
 </head>
-<body>
-<input type="text" placeholder="enter your name" id="name" >
-<button onclick="createBox()">Create</button>
-<br><br>
-<div id="div1" ></div>
-<div id="div2" ></div>
-<div id="div3" ></div>
-<div id="div4" ></div>
-<div id="div5" ></div>
-<div id="div6" ></div>
-<div id="div7" ></div>
-<div id="div8" ></div>
-<div id="div9" ></div>
-<div id="div10" ></div>
 
-<script type="text/javascript">
-function createBox(){
-	name=document.getElementById("name").value;
-	document.getElementById("div1").innerHTML=name;
-	document.getElementById("div1").style.visibility="visible";
-	
-	document.getElementById("div2").innerHTML=name;
-	document.getElementById("div2").style.visibility="visible";
-	
-	document.getElementById("div3").innerHTML=name;
-	document.getElementById("div3").style.visibility="visible";
-	
-	document.getElementById("div4").innerHTML=name;
-	document.getElementById("div4").style.visibility="visible";
-	
-	document.getElementById("div5").innerHTML=name;
-	document.getElementById("div5").style.visibility="visible";
-	
-	document.getElementById("div6").innerHTML=name;
-	document.getElementById("div6").style.visibility="visible";
-	
-	document.getElementById("div7").innerHTML=name;
-	document.getElementById("div7").style.visibility="visible";
-	
-	document.getElementById("div8").innerHTML=name;
-	document.getElementById("div8").style.visibility="visible";
-	
-	document.getElementById("div9").innerHTML=name;
-	document.getElementById("div9").style.visibility="visible";
-	
-	document.getElementById("div10").innerHTML=name;
-	document.getElementById("div10").style.visibility="visible";
-	
-	document.getElementById("div11").innerHTML=name;
-	document.getElementById("div11").style.visibility="visible";
-	
-	document.getElementById("div12").innerHTML=name;
-	document.getElementById("div12").style.visibility="visible";
-	
-	document.getElementById("div13").innerHTML=name;
-	document.getElementById("div13").style.visibility="visible";
-	
-	document.getElementById("div14").innerHTML=name;
-	document.getElementById("div14").style.visibility="visible";
-	
-	document.getElementById("div15").innerHTML=name;
-	document.getElementById("div15").style.visibility="visible";
-	
-	document.getElementById("div16").innerHTML=name;
-	document.getElementById("div16").style.visibility="visible";
-	
-	document.getElementById("div17").innerHTML=name;
-	document.getElementById("div17").style.visibility="visible";
-}
-</script>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="text" id="name" class="form-control" placeholder="Enter name">
+            </div>
+            <div class="col-sm-6" style="margin-top: 10px;">
+                <button class="btn btn-primary" id="button" >Font</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container" id="main">
+        <div class="row" id="row-1">
+            <div class="col-sm-3" id="f1">
+               
+            </div>
+            <div class="col-sm-3" id="f2">
+
+            </div>
+            <div class="col-sm-3" id="f3">
+
+            </div>
+            <div class="col-sm-3" id="f4">
+
+            </div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="col-sm-3" id="f5">
+
+            </div>
+            <div class="col-sm-3" id="f6">
+
+            </div>
+            <div class="col-sm-3" id="f7">
+
+            </div>
+            <div class="col-sm-3" id="f8">
+
+            </div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="col-sm-3" id="f9">
+
+            </div>
+            <div class="col-sm-3" id="f10">
+
+            </div>
+            <div class="col-sm-3" id="f11">
+
+            </div>
+            <div class="col-sm-3" id="f12">
+
+            </div>
+        </div>
+        <div class="row" id="row-4">
+            <div class="col-sm-3 " id="f13">
+
+            </div>
+            <div class="col-sm-3" id="f14">
+
+            </div>
+            <div class="col-sm-3" id="f15">
+
+            </div>
+            <div class="col-sm-3" id="f16">
+
+            </div>
+        </div>
+        <div class="row" id="row-5">
+            <div class="col-sm-3" id="f17">
+
+            </div>
+            <div class="col-sm-3" id="f18">
+
+            </div>
+            <div class="col-sm-3" id="f19">
+
+            </div>
+            <div class="col-sm-3" id="f20">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&family=Architects+Daughter&family=Caveat&family=Cinzel&family=Inconsolata&family=Indie+Flower&family=Kaisei+HarunoUmi&family=Kaisei+Tokumin:wght@500&family=Lobster&family=Ma+Shan+Zheng&family=Monoton&family=Noto+Sans:ital,wght@1,700&family=Orbitron&family=Oswald:wght@500&family=Pacifico&family=Padauk&family=Patrick+Hand&family=Permanent+Marker&family=Press+Start+2P&family=Rampart+One&family=Roboto:wght@400;500&family=Sacramento&family=Satisfy&family=Sigmar+One&family=Source+Sans+Pro&family=Special+Elite&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+
+
+    <script>
+       $(document).ready(function(){
+           $("#button").click(function(){
+               let name=$("#name").val();
+                $(".col-sm-3").append(name);
+           });
+       });
+    </script>
 </body>
+
 </html>
