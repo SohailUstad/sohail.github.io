@@ -12,7 +12,7 @@
             padding: 2px;
         }
 
-        .col-sm-3{
+        .col-sm-3 {
             border-bottom: 1px solid black;
             padding-bottom: 25px;
             padding-top: 25px;
@@ -106,16 +106,17 @@
             <div class="col-sm-4">
                 <input type="text" id="name" class="form-control" placeholder="Enter name">
             </div>
-            <div class="col-sm-6" >
-                <button class="btn btn-primary" id="button" >Font</button>
-                
+            <div class="col-sm-6">
+                <button class="btn btn-primary" id="button">Font</button>
+                <button class="btn btn-primary" id="small">Small</button>
+                <button class="btn btn-primary" id="big">Big</button>
             </div>
         </div>
     </div>
     <div class="container" id="main">
         <div class="row" id="row-1">
             <div class="col-sm-3" id="f1">
-               
+
             </div>
             <div class="col-sm-3" id="f2">
 
@@ -207,12 +208,22 @@
 
 
     <script>
-       $(document).ready(function(){
-           $("#button").click(function(){
-               let name=$("#name").val();
-                $(".col-sm-3").append(name);
-           });
-       });
+        $(document).ready(function () {
+            $(".col-sm-3").text("");
+            $("#button").click(function () {
+                let text = $(".col-sm-3").text();
+                if (text =="") {
+                    let name = $("#name").val();
+                    $(".col-sm-3").append(name);
+                }
+            });
+            $("#small").click(function () {
+                $(".col-sm-3").css("font-size", "15px");
+            })
+            $("#big").click(function () {
+                $(".col-sm-3").css("font-size", "25px");
+            })
+        });
     </script>
 </body>
 
